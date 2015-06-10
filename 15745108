@@ -1,0 +1,12 @@
+#!/bin/bash
+
+func() {
+	if [ "$2" -eq 0 ] ; then
+		echo "$1"
+	else
+		func "$2" "$(( $1 % $2 ))"
+	fi 
+}
+
+func "$1" "$2"
+
