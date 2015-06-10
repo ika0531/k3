@@ -11,7 +11,7 @@ error () {
 [ $(./15745108 45 12) -eq 3 ] || error "ERROR3" 
 
 # 終了ステータスが0で終わるか確認
-./15745108 45 12 > /dev/null || error "ERROR4"
+./15745108 45 12 > /dev/null || error "ERROR"
 
 echo OK
 
